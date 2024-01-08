@@ -1,6 +1,6 @@
 const app = require("./app.js");
 const setupMongoConection = require("./common/utils/setupMongoConection");
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 10000;
 
 app.listen(PORT, async () => {
   await setupMongoConection();
