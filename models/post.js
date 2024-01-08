@@ -19,6 +19,11 @@ const PostSchema = new Schema(
       type: Number,
       default: 0,
     },
+    author: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+    },
     imageUrl: String,
   },
   { timestamps: true, versionKey: false }
